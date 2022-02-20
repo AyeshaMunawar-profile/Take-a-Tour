@@ -1,5 +1,18 @@
+// Variables
 @import "abstract/variables";
+@import "abstract/mixin";
 
+// Base
 @import "base/base";
 
+// Layout
+@import "layout/layout";
+@import "layout/header";
+@import "layout/sidebar";
+
+// Pages
 @import "pages/home";
+
+//Components
+@import "components/search-bar";
+@import "components/user-nav";
