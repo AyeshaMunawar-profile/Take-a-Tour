@@ -1,4 +1,9 @@
 :root {
+  //Colors
+  //Neutral Colors BLACK GREY OFF-WHITE AND WHITE
+  //60% WHITE BLACK ORANGE GREEN
+  //30% PURPLE
+  //SEA GREEN & OFF WHITE
   --neutral-color-white: #fdfcfb;
   --neutral-color-black: #121c04;
   --neutral-color-off-white__-2: #f7f7f7;
@@ -11,6 +16,8 @@
   --neutral-color-grey__2: #434343;
   --neutral-color-grey__3: #2e2e2e;
   --neutral-color-grey__4: #222222;
+
+  //Primary Color : GREEN
   --primary-color__-3: #d7f69e;
   --primary-color__-2: #b1d823;
   --primary-color__-1: #86c421;
@@ -26,11 +33,15 @@
   --primary-color-u__0: #7cb939;
   --primary-color-u__1: #5e901e;
   --primary-color-u__2: #3d772a;
+
+  //Secondary color: YELLOW */
   --secondary-color__-2: #eff627;
   --secondary-color__-1: #fddf15;
   --secondary-color__0: #fcbf00;
   --secondary-color__1: #db8200;
   --secondary-color-u__-2: #dbe246;
+
+  //Tertiary Color : YELLOW TORQUISE AND RED */
   --tertiary-color__red__-3: #fc6a6a;
   --tertiary-color__red__-2: #e34500;
   --tertiary-color__red__-1: #c92424;
@@ -39,28 +50,26 @@
   --tertiary-color__red__2: #4b1f1f;
   --tertiary-color__torquise__-1: #40e0d0;
   --tertiary-color__torquise__0: #3acabb;
-  --tertiary-color__torquise__1: #26867d; }
+  --tertiary-color__torquise__1: #26867d;
+}
 
-:root {
-  font-size: 62.5%; }
+//Grid
+$grid-width: 114rem;
+$grid-width-small: 55rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
 
-html {
-  box-sizing: border-box; }
+//Font size
+$default-font-size: 1.6rem;
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-  font-size: inherit; }
+//Box properties
+$border-radius-small: 2px;
+$border-radius-default: 3px;
+$border-radius-medium: 5px;
+$border-radius-large: 10rem;
 
-body {
-  min-height: 100vh;
-  background-image: linear-gradient(to bottom right, var(--primary-color__-1), var(--primary-color__0));
-  background-size: cover;
-  background-repeat: no-repeat; }
+//Border
+$border-thickness-default: 3px;
+$border-thickness-medium: 5px;
 
-::selection {
-  background-color: var(--primary-color__1);
-  color: var(--neutral-color-off-white__0); }
