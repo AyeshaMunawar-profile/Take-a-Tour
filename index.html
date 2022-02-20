@@ -5,11 +5,55 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/logo-favicon-100x100.png">
     <title>Take a Tour</title>
-    <link type="text/css" rel="stylesheet" href="css/icon-fonts.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="container">
+    <header class="header">
+        <img srcset="img/logo-greenx424.png 424w,img/logo-greenx200x200.png 153w"
+             sizes="(max-width: 900px) 30vw, (max-width: 900px) 20vw, 424px"
+             src="img/logo-greenx424.png" alt="logo" class="logo">
+        <form action="#" class="search">
+            <label for="search-hotels-input" class="search__label">
+                <input type="text" class="search__input" placeholder="Search hotels" name="search-hotels"
+                       id="search-hotels-input">
+                <button class="search__button">
+                    <svg class="icon icon-magnifying-glass search__icon">
+                        <use xlink:href="img/SVG/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </label>
 
+        </form>
+        <nav class="user-nav">
+            <div class="user-nav__icon-box">
+                <svg class="user-nav__icon">
+                    <use xlink:href="img/SVG/sprite.svg#icon-bookmarks"></use>
+                </svg>
+                <span class="user-nav__notification">12</span>
+            </div>
+            <div class="user-nav__icon-box">
+                <svg class="user-nav__icon">
+                    <use xlink:href="img/SVG/sprite.svg#icon-chat"></use>
+                </svg>
+                <span class="user-nav__notification">22</span>
+            </div>
+            <div class="user-nav__user">
+                <img src="img/Stories1x300.png" alt="user profile picture" class="user-nav__user-photo">
+                <span class="user-nav__user-name">Ayesha Munawar</span>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <nav class="sidebar">Side Bar</nav>
+        <main class="hotel-view">Main Hotel View</main>
+    </div>
+</div>
 </body>
 </html>

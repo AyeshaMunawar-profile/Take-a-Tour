@@ -4,6 +4,8 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 *,
@@ -25,4 +27,8 @@ body {
 ::selection {
   background-color: var(--primary-color__1);
   color: var(--neutral-color-off-white__0);
+}
+
+button:hover {
+  cursor: pointer;
 }
