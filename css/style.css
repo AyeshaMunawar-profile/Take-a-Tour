@@ -86,7 +86,8 @@ button:hover {
   border-bottom: var(--neutral-color-grey__-2);
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.4rem; }
 
 .logo {
   height: 3.25rem;
@@ -133,18 +134,20 @@ button:hover {
       color: var(--neutral-color-black);
       background-color: var(--neutral-color-grey__-2);
       width: 100%; }
+    .search__input::placeholder, .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--neutral-color-grey__0); }
   .search__button {
     border: none;
     background-color: var(--neutral-color-grey__-3); }
     .search__button:focus {
-      outline: none;
-      background-color: var(--neutral-color-grey__-2); }
+      outline: none; }
     .search__button:active {
-      transform: translateY(2px);
-      background-color: var(--neutral-color-grey__-2); }
+      transform: translateY(1px); }
   .search__icon {
     height: 2rem;
-    width: 2rem; }
+    width: 2rem;
+    fill: var(--neutral-color-grey__2); }
 
 .user-nav {
   display: flex;
