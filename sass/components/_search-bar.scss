@@ -17,14 +17,22 @@
     margin-right: -3.2rem;
     width: 90%;
     transition: all .2s;
-    &:active{
+
+    &:active {
       background-color: var(--neutral-color-grey__-2);
     }
+
     &:focus {
       outline: none;
       color: var(--neutral-color-black);
       background-color: var(--neutral-color-grey__-2);
       width: 100%;
+    }
+
+    &::placeholder,
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--neutral-color-grey__0);
     }
   }
 
@@ -34,18 +42,17 @@
 
     &:focus {
       outline: none;
-      background-color: var(--neutral-color-grey__-2);
     }
 
     &:active {
-      transform: translateY(2px);
-      background-color: var(--neutral-color-grey__-2);
+      transform: translateY(1px);
     }
   }
 
   &__icon {
     height: 2rem;
     width: 2rem;
+    fill: var(--neutral-color-grey__2);
   }
 
 }
