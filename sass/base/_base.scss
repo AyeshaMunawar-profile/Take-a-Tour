@@ -32,3 +32,16 @@ body {
 button:hover {
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+
+}
+
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
