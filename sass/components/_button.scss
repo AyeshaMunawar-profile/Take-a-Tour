@@ -2,14 +2,20 @@
   border: none;
   transition: all .3s;
   font-size: inherit;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
 }
 
 .btn-inline {
   display: inline-block;
   color: var(--primary-color__1);
+  background-color: transparent;
 
   &--green {
-    background-color: transparent;
     border-bottom: 1px solid currentColor;
 
     &:link,
