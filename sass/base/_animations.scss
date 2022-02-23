@@ -1,0 +1,14 @@
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.02);
+    @include box-shadow-default;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}

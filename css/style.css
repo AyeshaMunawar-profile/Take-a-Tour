@@ -99,6 +99,20 @@ a:focus,
 a:active {
   text-decoration: none; }
 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05); {
+      box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); } }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
+
+.animate--pulsate {
+  animation: pulsate 1s infinite; }
+
 .header {
   height: 7rem;
   background-color: var(--neutral-color-white);
@@ -285,13 +299,17 @@ a:active {
 .btn {
   border: none;
   transition: all .3s;
-  font-size: inherit; }
+  font-size: inherit;
+  cursor: pointer; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
 
 .btn-inline {
   display: inline-block;
-  color: var(--primary-color__1); }
+  color: var(--primary-color__1);
+  background-color: transparent; }
   .btn-inline--green {
-    background-color: transparent;
     border-bottom: 1px solid currentColor; }
     .btn-inline--green:link, .btn-inline--green:visited {
       color: var(--primary-color__-1); }
