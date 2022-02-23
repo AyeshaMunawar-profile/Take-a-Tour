@@ -1,0 +1,45 @@
+.overview {
+  display: flex;
+  align-items: center;
+
+  &__heading {
+
+  }
+
+  &__stars {
+    margin-right: auto;
+  }
+
+  &__icon {
+    &--star, &--location {
+      width: 1.75rem;
+      height: 1.75rem;
+      fill: var(--primary-color__-1);
+    }
+
+    &--star {
+
+    }
+
+    &--location {
+
+    }
+  }
+
+  &__location {
+  }
+
+  &-location__text {
+  }
+
+  &__rating {
+    &-average {
+
+    }
+
+    &-count {
+
+    }
+  }
+
+}

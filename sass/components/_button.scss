@@ -1,0 +1,26 @@
+.btn {
+  padding: 2rem 3rem;
+  border: none;
+  transition: all .3s;
+}
+
+.btn-inline {
+  display: inline-block;
+  text-decoration: underline;
+  &--green {
+    background-color: transparent;
+    &:link,
+    &:visited {
+      color: var(--neutral-color-grey__4);
+    }
+
+    &:hover {
+      color: var(--primary-color__-1);
+    }
+
+    &:focus,
+    &:active {
+      color: var(--primary-color__-2);
+    }
+  }
+}
