@@ -104,7 +104,7 @@ a:active {
     transform: scale(1);
     box-shadow: none; }
   50% {
-    transform: scale(1.05); {
+    transform: scale(1.02); {
       box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); } }
   100% {
     transform: scale(1);
@@ -203,7 +203,7 @@ a:active {
   margin: 8rem auto;
   background-color: var(--neutral-color-grey__-2);
   box-shadow: var(--box-shadow-default);
-  min-height: 50rem; }
+  min-height: 45rem; }
 
 .content {
   display: flex; }
@@ -380,10 +380,14 @@ a:active {
         color: inherit;
         align-items: flex-start; } }
     .overview__rating-average {
-      font-size: 2.25rem; }
+      font-size: 2.25rem;
+      font-weight: 300; }
       @media only screen and (max-width: 75em) {
         .overview__rating-average {
           font-size: 1.8rem; } }
+    .overview__rating-count {
+      font-size: 0.8rem;
+      text-transform: uppercase; }
   .overview__button {
     margin: 0 1rem;
     padding: 0; }
