@@ -20,9 +20,11 @@
     }
 
   }
-  &__item:active::before{
+
+  &__item:active::before {
     background-color: var(--primary-color__-2);;
   }
+
   &__item::before {
     content: "";
     position: absolute;
@@ -39,7 +41,7 @@
   }
 
   &__item--active &__link:link,
-  &__item--active &__link:visited{
+  &__item--active &__link:visited {
     color: var(--neutral-color-black);
   }
 
@@ -91,6 +93,6 @@
 .legal {
   font-size: 1.2rem;
   text-align: center;
-  padding-top: 2.5rem;
+  padding: 2.5rem 0.2rem 0.8rem 0.2rem;
   color: var(--neutral-color-grey__-1);
 }
