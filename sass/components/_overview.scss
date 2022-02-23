@@ -1,6 +1,7 @@
 .overview {
   display: flex;
   align-items: center;
+  @include border-bottom-default;
 
   &__heading {
 

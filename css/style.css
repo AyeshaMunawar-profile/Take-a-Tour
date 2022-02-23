@@ -93,11 +93,11 @@ a:active {
 .header {
   height: 7rem;
   background-color: var(--neutral-color-white);
-  border-bottom: var(--neutral-color-grey__-2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--neutral-color-grey__-2); }
 
 .logo {
   height: 3.25rem;
@@ -285,7 +285,8 @@ a:active {
 
 .overview {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  border-bottom: 1px solid var(--neutral-color-grey__-2); }
   .overview__stars {
     margin-right: auto; }
   .overview__icon--star, .overview__icon--location {
