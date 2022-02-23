@@ -10,6 +10,10 @@
   list-style: none;
   font-size: 1.4rem;
   margin-top: 3.5rem;
+  @include respond(tab-land) {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
 
   &__item {
     position: relative;
@@ -68,6 +72,9 @@
       z-index: 10;
       transition: all .2s .3s;
       transition-timing-function: cubic-bezier(1, -0.01, 0, 1);
+      @include respond(tab-land){
+        padding: 2rem 2rem;
+      }
     }
 
     &:hover {

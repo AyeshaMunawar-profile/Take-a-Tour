@@ -53,6 +53,15 @@
 */
 :root {
   font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    :root {
+      font-size: 70%; } }
+  @media only screen and (max-width: 75em) {
+    :root {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    :root {
+      font-size: 50%; } }
 
 html {
   box-sizing: border-box;
@@ -114,6 +123,10 @@ a:active {
   list-style: none;
   font-size: 1.4rem;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 75em) {
+    .side-nav {
+      font-size: 1.2rem;
+      margin-top: 0; } }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
@@ -152,6 +165,9 @@ a:active {
       z-index: 10;
       transition: all .2s .3s;
       transition-timing-function: cubic-bezier(1, -0.01, 0, 1); }
+      @media only screen and (max-width: 75em) {
+        .side-nav__link:link, .side-nav__link:visited {
+          padding: 2rem 2rem; } }
     .side-nav__link:hover {
       color: var(--neutral-color-grey__4); }
     .side-nav__link:active {
@@ -267,29 +283,93 @@ a:active {
     margin-right: 1rem; }
 
 .btn {
-  padding: 2rem 3rem;
   border: none;
-  transition: all .3s; }
+  transition: all .3s;
+  font-size: inherit; }
 
 .btn-inline {
   display: inline-block;
-  text-decoration: underline; }
+  color: var(--primary-color__1); }
   .btn-inline--green {
-    background-color: transparent; }
+    background-color: transparent;
+    border-bottom: 1px solid currentColor; }
     .btn-inline--green:link, .btn-inline--green:visited {
-      color: var(--neutral-color-grey__4); }
-    .btn-inline--green:hover {
       color: var(--primary-color__-1); }
+    .btn-inline--green:hover {
+      color: var(--neutral-color-grey__4); }
     .btn-inline--green:focus, .btn-inline--green:active {
-      color: var(--primary-color__-2); }
+      color: var(--neutral-color-black); }
 
 .overview {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   border-bottom: 1px solid var(--neutral-color-grey__-2); }
+  @media only screen and (max-width: 75em) {
+    .overview {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: start;
+      justify-content: center; } }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 75em) {
+      .overview__heading {
+        font-size: 1.8rem;
+        padding: 1.2rem 2rem; } }
   .overview__stars {
+    display: flex;
+    align-items: center;
     margin-right: auto; }
+    @media only screen and (max-width: 75em) {
+      .overview__stars {
+        padding: 1.2rem 2rem; } }
   .overview__icon--star, .overview__icon--location {
     width: 1.75rem;
     height: 1.75rem;
     fill: var(--primary-color__-1); }
+    @media only screen and (max-width: 75em) {
+      .overview__icon--star, .overview__icon--location {
+        width: 1.3rem;
+        height: 1.3rem; } }
+  .overview__location {
+    display: flex;
+    align-items: center;
+    justify-content: start; }
+    @media only screen and (max-width: 75em) {
+      .overview__location {
+        padding: 1.2rem 2rem;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start; } }
+  .overview__rating {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1.5rem;
+    background-color: var(--primary-color__-1);
+    color: var(--neutral-color-white); }
+    @media only screen and (max-width: 75em) {
+      .overview__rating {
+        text-align: left;
+        padding: 1.2rem 2rem;
+        background-color: transparent;
+        color: inherit;
+        align-items: flex-start; } }
+    .overview__rating-average {
+      font-size: 2.25rem; }
+      @media only screen and (max-width: 75em) {
+        .overview__rating-average {
+          font-size: 1.8rem; } }
+  .overview__button {
+    margin: 0 1rem;
+    padding: 0; }
+    @media only screen and (max-width: 75em) {
+      .overview__button {
+        text-align: left;
+        margin: 0 0 0 1rem; } }
