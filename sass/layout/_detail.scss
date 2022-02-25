@@ -1,0 +1,20 @@
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--neutral-color-grey__-4);
+  @include border-bottom-default;
+}
+
+.description {
+  background-color: var(--neutral-color-white);
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  padding: 3rem;
+  @include box-shadow-default;
+}
+
+.user-reviews {
+  background-color: var(--neutral-color-off-white__1);
+  flex: 1;
+  @include box-shadow-default;
+}
