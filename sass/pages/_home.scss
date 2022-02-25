@@ -8,6 +8,9 @@
 
 .content {
   display: flex;
+  @include respond(phone) {
+    flex-flow: column nowrap;
+  }
 }
 
 .hotel-view {

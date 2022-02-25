@@ -4,6 +4,11 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+  @include respond(phone) {
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .side-nav {
@@ -14,10 +19,18 @@
     font-size: 1.2rem;
     margin-top: 0;
   }
+  @include respond(phone) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__item {
     position: relative;
-
+    @include respond(phone) {
+      flex: 0 0 25%;
+    }
 
     &:not(:last-child) {
       margin-bottom: .5rem;
@@ -59,7 +72,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
+    @include respond(phone) {
+      text-align: center;
+    }
 
     &:link,
     &:visited {
@@ -72,7 +87,7 @@
       z-index: 10;
       transition: all .2s .3s;
       transition-timing-function: cubic-bezier(1, -0.01, 0, 1);
-      @include respond(tab-land){
+      @include respond(tab-land) {
         padding: 2rem 2rem;
       }
     }
@@ -84,6 +99,8 @@
     &:active {
       color: var(--neutral-color-black);
     }
+
+
   }
 
   &__icon {
@@ -91,9 +108,17 @@
     height: 1.75rem;
     fill: currentColor;
     margin-right: 2rem;
+    @include respond(phone) {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 0;
+    }
   }
 
   &__text {
+    @include respond(phone) {
+      display: none;
+    }
   }
 }
 
