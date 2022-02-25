@@ -21,5 +21,6 @@
 9) How and why to use the currentColor CSS variable 
 10) How to use some more advance flexbox alignment techniques , including `flex-direction, justify-content` and a`lign items` 
 11) How to create an infinite animation 
-    1) How to use `margin: auto` e.g. if we put margin right auto then it pushes the elements after it to the far right and calculate the margin width based on the device width and the container width 
-12)Experiment with different features related to flexbox and understand why it's so powerful
+12) How to use `margin: auto` e.g. if we put margin right auto then it pushes the elements after it to the far right and calculate the margin width based on the device width and the container width 
+13) Experiment with different features related to flexbox and understand why it's so powerful
+14) How to use masks to make a part of element see-through for bullets in hotel area section
