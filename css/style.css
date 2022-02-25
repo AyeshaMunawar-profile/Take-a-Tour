@@ -388,9 +388,9 @@ a:active {
     .btn-inline--green:link, .btn-inline--green:visited {
       color: var(--primary-color__-1); }
     .btn-inline--green:hover {
-      color: var(--neutral-color-grey__4); }
+      color: var(--primary-color__2); }
     .btn-inline--green:focus, .btn-inline--green:active {
-      color: var(--neutral-color-black); }
+      color: var(--primary-color__4); }
 
 .overview {
   display: flex;
