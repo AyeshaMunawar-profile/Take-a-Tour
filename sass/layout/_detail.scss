@@ -6,11 +6,91 @@
 }
 
 .description {
+  font-size: 1.4rem;
   background-color: var(--neutral-color-white);
   flex: 0 0 60%;
   margin-right: 4.5rem;
   padding: 3rem;
   @include box-shadow-default;
+}
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.list {
+  @include border-bottom-default;
+  @include border-top-default;
+  padding: 2rem 0;
+  margin: 3rem 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  @include respond(tab-land) {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: 1rem;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      margin-right: 0.7rem;
+      //Older Browsers
+      //background-image: url("../img/SVG/SVG/chevron-thin-right.svg");
+      //background-size: cover;
+      //background-position: center;
+      //background-repeat: no-repeat;
+      //Newer Browsers -masks
+      background-color: var(--secondary-color__1);
+      -webkit-mask-image: url("../img/SVG/SVG/chevron-thin-right.svg");
+      -webkit-mask-size: cover;
+      mask-image: url("../img/SVG/SVG/chevron-thin-right.svg");
+      mask-size: cover;
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+}
+
+.recommend {
+  font-size: 1.3rem;
+  color: var(--neutral-color-grey__1);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  @include respond(tab-land) {
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__count {
+    @include respond(tab-land) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__friends {
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid var(--neutral-color-white);
+
+    &:not(:last-of-type) {
+      margin-right: -1.5rem;
+    }
+
+  }
 }
 
 .user-reviews {
