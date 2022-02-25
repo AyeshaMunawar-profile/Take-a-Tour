@@ -1,0 +1,5 @@
+.review {
+  background-color: var(--neutral-color-off-white__1);
+  flex: 1;
+  @include box-shadow-default;
+}
