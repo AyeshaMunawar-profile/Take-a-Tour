@@ -52,16 +52,19 @@
       display: inline-block;
       margin-right: 0.7rem;
       //Older Browsers
-      //background-image: url("../img/SVG/SVG/chevron-thin-right.svg");
-      //background-size: cover;
-      //background-position: center;
-      //background-repeat: no-repeat;
+      background-image: url("../img/SVG/SVG/chevron-thin-right.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       //Newer Browsers -masks
-      background-color: var(--secondary-color__1);
-      -webkit-mask-image: url("../img/SVG/SVG/chevron-thin-right.svg");
-      -webkit-mask-size: cover;
-      mask-image: url("../img/SVG/SVG/chevron-thin-right.svg");
-      mask-size: cover;
+      @supports (mask-image: url("../img/SVG/SVG/chevron-thin-right.svg")) or (-webkit-mask-image:url("../img/SVG/SVG/chevron-thin-right.svg")) {
+        background-color: var(--secondary-color__1);
+        -webkit-mask-image: url("../img/SVG/SVG/chevron-thin-right.svg");
+        -webkit-mask-size: cover;
+        mask-image: url("../img/SVG/SVG/chevron-thin-right.svg");
+        mask-size: cover;
+        background-image: none;
+      }
       width: 1.2rem;
       height: 1.2rem;
     }
