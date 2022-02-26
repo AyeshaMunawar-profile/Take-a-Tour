@@ -6,12 +6,14 @@
 @import "base/base";
 @import "base/animations";
 @import "base/utilities";
+@import "base/typography";
 
 // Layout
 @import "layout/layout";
 @import "layout/header";
 @import "layout/sidebar";
 @import "layout/detail";
+@import "layout/footer";
 
 // Pages
 @import "pages/home";
