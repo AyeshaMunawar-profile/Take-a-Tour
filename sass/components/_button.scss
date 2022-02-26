@@ -24,6 +24,9 @@
   &--visible {
     padding: 2rem 7rem;
     display: inline-block;
+    @include respond(phone){
+      padding: 2rem 6rem;
+    }
   }
 
   &--invisible {
@@ -31,6 +34,9 @@
     position: absolute;
     left: 0;
     top: -100%;
+    @include respond(phone){
+      padding: 2rem 0;
+    }
   }
 
   &:hover &--visible {
@@ -50,7 +56,7 @@
 .btn--large {
   padding: 2rem 4rem;
   @include respond(tab-land) {
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
   }
 }
 

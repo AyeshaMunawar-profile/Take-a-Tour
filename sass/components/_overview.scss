@@ -72,6 +72,11 @@
       justify-content: flex-start;
       font-size: 1.6rem;
     }
+    @include respond(phone) {
+      flex-flow: column nowrap;
+      align-items: start;
+      justify-content: space-between;
+    }
   }
 
   &-location__text {
@@ -103,8 +108,12 @@
     }
 
     &-count {
+      color: var(--neutral-color-grey__1);
       font-size: 0.8rem;
       text-transform: uppercase;
+      @include respond(phone){
+        font-size: 1rem;
+      }
     }
   }
 
@@ -115,6 +124,9 @@
       text-align: left;
       margin: 0 0 0 1rem;
       border-bottom: none;
+    }
+    @include respond(phone) {
+      margin: 2rem 0 0 0;
     }
   }
 }
