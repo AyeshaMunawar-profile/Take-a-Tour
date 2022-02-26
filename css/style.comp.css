@@ -456,7 +456,6 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 2rem;
   align-self: stretch; }
   .user-nav > * {
     padding: 0 2rem;
