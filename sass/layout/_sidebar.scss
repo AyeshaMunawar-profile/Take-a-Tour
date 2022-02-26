@@ -92,14 +92,16 @@
       }
       @include respond(tab-port) {
         padding: 2rem 1rem;
-        justify-content: start;
+        justify-content: flex-start;
       }
       @include respond(phone) {
         padding: 3rem 1rem;
         justify-content: center;
       }
       @include respond(small-phone) {
-        padding: 2rem 2rem;
+        padding: 2rem 0.2rem;
+        flex-flow: column nowrap;
+        font-size: 1rem;
       }
     }
 
@@ -133,6 +135,7 @@
       width: 2.5rem;
       height: 2.5rem;
       margin-right: 0;
+      margin-bottom: 2rem;
     }
   }
 
@@ -144,7 +147,7 @@
       font-size: 1.2rem;
     }
     @include respond(small-phone) {
-      display: none;
+      font-size: 1rem;
     }
   }
 }

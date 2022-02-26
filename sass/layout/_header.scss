@@ -6,6 +6,11 @@
   align-items: center;
   font-size: 1.4rem;
   @include border-bottom-default;
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+    height: 12rem;
+    align-content: space-around;
+  }
 }
 
 .logo {

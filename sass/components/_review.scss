@@ -14,7 +14,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   position: relative;
   z-index: 1;
   border-radius: $border-radius-small;

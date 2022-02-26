@@ -3,16 +3,6 @@
   font-size: inherit;
   cursor: pointer;
   transition: all 1s ease-in-out;
-  @include box-shadow-default;
-
-  &:hover,
-  &:focus {
-    @include box-shadow-default__-1;
-  }
-
-  &:active {
-    box-shadow: none;
-  }
 
   &:focus {
     outline: none;
@@ -75,8 +65,18 @@
   text-transform: uppercase;
   font-weight: lighter;
   border-radius: 100px;
+  @include box-shadow-default;
   @include respond(tab-land) {
     font-size: 1.6rem;
+  }
+
+  &:hover,
+  &:focus {
+    @include box-shadow-default__-1;
+  }
+
+  &:active {
+    box-shadow: none;
   }
 
   &--green {
