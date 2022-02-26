@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --neutral-color-white: #fdfcfb;
   --neutral-color-black: #121c04;
@@ -248,7 +249,7 @@ a:active {
     box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); }
   @media only screen and (max-width: 75em) {
     .description {
-      margin: 0 0 3rem 0; } }
+      margin: 0 0 10rem 0; } }
 
 .paragraph:not(:last-of-type) {
   margin-bottom: 2rem; }
@@ -519,16 +520,39 @@ a:active {
   background-color: var(--neutral-color-off-white__1);
   flex: 1;
   padding: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: start; }
+  align-items: start;
+  position: relative;
+  z-index: 1; }
   .review {
     box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); }
+  @media only screen and (max-width: 75em) {
+    .review {
+      margin-bottom: 10rem; } }
+  .review::before {
+    content: "❃";
+    position: absolute;
+    font-size: 6rem;
+    top: 0rem;
+    left: -2.5rem;
+    color: var(--secondary-color__-1);
+    line-height: 0;
+    z-index: -1; }
+    @media only screen and (max-width: 75em) {
+      .review::before {
+        font-size: 15rem;
+        left: 50%;
+        top: -0.5rem;
+        transform: translate(-50%, -50%); } }
   .review__text {
     text-align: left;
     text-transform: full-size-kana; }
+    @media only screen and (max-width: 75em) {
+      .review__text {
+        margin-top: 5rem; } }
   .review__user {
     display: flex;
     flex-flow: row nowrap;
@@ -567,6 +591,6 @@ a:active {
   .review__rating {
     font-size: 2.5rem;
     color: var(--primary-color__0);
-    font-weight: 400; }
+    font-weight: 300; }
   .review__button {
     margin: 0 auto; }
