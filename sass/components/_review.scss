@@ -17,8 +17,9 @@
   align-items: start;
   position: relative;
   z-index: 1;
+  border-radius: $border-radius-small;
   @include respond(tab-land) {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
 
   &::before {
@@ -31,7 +32,7 @@
     line-height: 0;
     z-index: -1;
     @include respond(tab-land) {
-      font-size: 15rem;
+      font-size: 12rem;
       left: 50%;
       top: -0.5rem;
       transform: translate(-50%, -50%);
