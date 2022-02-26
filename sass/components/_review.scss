@@ -27,7 +27,7 @@
     font-size: 6rem;
     top: 0rem;
     left: -2.5rem;
-    color: var(--secondary-color__-1);
+    color: var(--primary-color__-2);
     line-height: 0;
     z-index: -1;
     @include respond(tab-land) {
@@ -52,6 +52,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    margin: 2rem 0 0 0;
     @include respond(tab-land) {
       flex-flow: column nowrap;
       justify-content: space-between;
