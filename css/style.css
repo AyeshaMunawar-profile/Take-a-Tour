@@ -412,9 +412,9 @@ a:active {
 
 .btn {
   border: none;
-  transition: all .3s;
   font-size: inherit;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 1s ease-in-out; }
   .btn:focus {
     outline: none;
     animation: pulsate 1s infinite; }
@@ -423,14 +423,19 @@ a:active {
   display: inline-block;
   color: var(--primary-color__1);
   background-color: transparent; }
+  .btn-inline span {
+    margin-left: 3px;
+    transition: margin-left 0.5s ease-in-out; }
   .btn-inline--green {
     border-bottom: 1px solid currentColor; }
     .btn-inline--green:link, .btn-inline--green:visited {
-      color: var(--primary-color__-1); }
+      color: var(--primary-color__-2); }
     .btn-inline--green:hover {
-      color: var(--primary-color__2); }
+      color: var(--primary-color__0); }
+      .btn-inline--green:hover span {
+        margin-left: 8px; }
     .btn-inline--green:focus, .btn-inline--green:active {
-      color: var(--primary-color__4); }
+      color: var(--primary-color__2); }
 
 .overview {
   display: flex;

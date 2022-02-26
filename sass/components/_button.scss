@@ -1,9 +1,8 @@
 .btn {
   border: none;
-  transition: all .3s;
   font-size: inherit;
   cursor: pointer;
-
+  transition: all 1s ease-in-out;
   &:focus {
     outline: none;
     animation: pulsate 1s infinite;
@@ -15,25 +14,32 @@
   color: var(--primary-color__1);
   background-color: transparent;
 
+  & span {
+    margin-left: 3px;
+    transition: margin-left 0.5s ease-in-out;
+  }
+
   &--green {
     border-bottom: 1px solid currentColor;
 
     &:link,
     &:visited {
-      color: var(--primary-color__-1);
+      color: var(--primary-color__-2);
 
 
     }
 
     &:hover {
-      color: var(--primary-color__2);
+      color: var(--primary-color__0);
 
-
+      span {
+        margin-left: 8px;
+      }
     }
 
     &:focus,
     &:active {
-      color: var(--primary-color__4);
+      color: var(--primary-color__2);
     }
   }
 }
