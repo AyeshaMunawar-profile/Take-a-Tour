@@ -3,6 +3,55 @@
   font-size: inherit;
   cursor: pointer;
   transition: all 1s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn__slide {
+  transition: all 1s ease-in-out;
+  position: relative;
+  overflow: hidden;
+
+  & > * {
+    transition: all .3s ease-in-out;
+    height: 100%;
+    width: 100%;
+    display: inline-block
+  }
+
+  &--visible {
+    padding: 2rem 7rem;
+    display: inline-block;
+  }
+
+  &--invisible {
+    padding: 2rem 0;
+    position: absolute;
+    left: 0;
+    top: -100%;
+  }
+
+  &:hover &--visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &--invisible {
+    top: 0;
+  }
+
+  &:focus {
+    animation: pulsate 0.8s infinite;
+  }
+
+}
+
+.btn--large {
+  padding: 2rem 4rem;
+  @include respond(tab-land) {
+    padding: 2rem 3rem;
+  }
 }
 
 .btn__main {
@@ -10,33 +59,23 @@
   text-transform: uppercase;
   font-weight: lighter;
   border-radius: 100px;
-  padding: 1.2rem 3rem;
   @include respond(tab-land) {
-    padding: 2rem 3rem;
     font-size: 1.6rem;
   }
 
-  &__visible {
-
-  }
-
-  &__invsisible {
-
-  }
-
   &--green {
-    background-image: linear-gradient(to right bottom, var(--primary-color-u__-2), var(--primary-color-u__1));
+    background-image: linear-gradient(to right bottom, var(--primary-color-u__-1), var(--primary-color-u__1));
     color: var(--neutral-color-white);
 
     &:link,
     &:visited {
-      transition: all 0.1s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
     &:hover,
     &:active,
     &:focus {
-      background-image: linear-gradient(to right bottom, var(--primary-color__-2), var(--primary-color__1));
+      background-image: linear-gradient(to right bottom, var(--primary-color__1), var(--primary-color__-1));
     }
 
     &:active,

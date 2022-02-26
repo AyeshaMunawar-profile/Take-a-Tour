@@ -438,24 +438,54 @@ a:active {
   font-size: inherit;
   cursor: pointer;
   transition: all 1s ease-in-out; }
+  .btn:focus {
+    outline: none; }
+
+.btn__slide {
+  transition: all 1s ease-in-out;
+  position: relative;
+  overflow: hidden; }
+  .btn__slide > * {
+    transition: all .3s ease-in-out;
+    height: 100%;
+    width: 100%;
+    display: inline-block; }
+  .btn__slide--visible {
+    padding: 2rem 7rem;
+    display: inline-block; }
+  .btn__slide--invisible {
+    padding: 2rem 0;
+    position: absolute;
+    left: 0;
+    top: -100%; }
+  .btn__slide:hover .btn__slide--visible {
+    transform: translateY(100%); }
+  .btn__slide:hover .btn__slide--invisible {
+    top: 0; }
+  .btn__slide:focus {
+    animation: pulsate 0.8s infinite; }
+
+.btn--large {
+  padding: 2rem 4rem; }
+  @media only screen and (max-width: 75em) {
+    .btn--large {
+      padding: 2rem 3rem; } }
 
 .btn__main {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: lighter;
-  border-radius: 100px;
-  padding: 1.2rem 3rem; }
+  border-radius: 100px; }
   @media only screen and (max-width: 75em) {
     .btn__main {
-      padding: 2rem 3rem;
       font-size: 1.6rem; } }
   .btn__main--green {
-    background-image: linear-gradient(to right bottom, var(--primary-color-u__-2), var(--primary-color-u__1));
+    background-image: linear-gradient(to right bottom, var(--primary-color-u__-1), var(--primary-color-u__1));
     color: var(--neutral-color-white); }
     .btn__main--green:link, .btn__main--green:visited {
-      transition: all 0.1s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
     .btn__main--green:hover, .btn__main--green:active, .btn__main--green:focus {
-      background-image: linear-gradient(to right bottom, var(--primary-color__-2), var(--primary-color__1)); }
+      background-image: linear-gradient(to right bottom, var(--primary-color__1), var(--primary-color__-1)); }
     .btn__main--green:active, .btn__main--green:focus {
       transform: translateY(1.5px); }
 
