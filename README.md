@@ -19,7 +19,7 @@
 7) Use [iconmoon](https://icomoon.io/) for searching vector graphics 
 8) I used ScaleY and multiple transition properties with different settings , to create a creative hover effect
 9) How and why to use the currentColor CSS variable 
-10) How to use some more advance flexbox alignment techniques , including `flex-direction, justify-content` and a`lign items` 
+10) How to use some more advance flexbox alignment techniques , including `flex-direction, justify-content` and `align items` 
 11) How to create an infinite animation 
 12) How to use `margin: auto` e.g. if we put margin right auto then it pushes the elements after it to the far right and calculate the margin width based on the device width and the container width 
 13) Experiment with different features related to flexbox and understand why it's so powerful
