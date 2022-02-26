@@ -3,9 +3,47 @@
   font-size: inherit;
   cursor: pointer;
   transition: all 1s ease-in-out;
-  &:focus {
-    outline: none;
-    animation: pulsate 1s infinite;
+}
+
+.btn__main {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  border-radius: 100px;
+  padding: 1.2rem 3rem;
+  @include respond(tab-land) {
+    padding: 2rem 3rem;
+    font-size: 1.6rem;
+  }
+
+  &__visible {
+
+  }
+
+  &__invsisible {
+
+  }
+
+  &--green {
+    background-image: linear-gradient(to right bottom, var(--primary-color-u__-2), var(--primary-color-u__1));
+    color: var(--neutral-color-white);
+
+    &:link,
+    &:visited {
+      transition: all 0.1s ease-in-out;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-image: linear-gradient(to right bottom, var(--primary-color__-2), var(--primary-color__1));
+    }
+
+    &:active,
+    &:focus {
+      transform: translateY(1.5px);
+    }
+
   }
 }
 
@@ -13,6 +51,11 @@
   display: inline-block;
   color: var(--primary-color__1);
   background-color: transparent;
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
 
   & span {
     margin-left: 3px;
